@@ -238,6 +238,21 @@
 
         
         @media (max-width: 400px) {
+          .logo-container {
+            position: relative;
+            width: 150px;
+            height: 60px;
+            margin: 10px 0 0 10px;
+        }
+
+        #logo1, #logo2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 120px;
+            height: 45px;
+            transition: opacity 0.5s ease;
+        }
           .cert-card {
             padding: 1rem 0.5rem;
             min-height: 180px;
