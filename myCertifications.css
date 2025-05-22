@@ -1,0 +1,272 @@
+        body {
+          font-family: 'Quicksand', sans-serif;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(135deg, #0096C7, #00B4D8, #48CAE4);
+          color: #fff;
+        }
+        html {
+          scroll-behavior: smooth;
+        }
+        header {
+          width: 100%;
+          height: 90px;
+          background: linear-gradient(150deg, #0096C7, #00B4D8, #48CAE4);
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          position: fixed;
+          font-family: 'quicksand', sans-serif;
+          font-size: 30px;
+          border-radius: 10px;
+          z-index: 1000;
+          opacity: 0.9;
+      }
+
+      img {
+          width: 200px;
+          height: 80px;
+          margin: 10px 0 0 10px;
+          padding: 0;
+      }
+
+      .logo-container {
+          position: relative;
+          width: 200px;
+          height: 80px;
+          margin: 10px 0 0 10px;
+      }
+
+      #logo1, #logo2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 160px;
+          height: 60px;
+          transition: opacity 0.5s ease;
+      }
+
+      #logo2 {
+          opacity: 0;
+      }
+
+      .hidden {
+          opacity: 0;
+      }
+
+      ul {
+          padding: 0;
+          margin-top: 40px;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-right: 20px;
+      }
+
+      li {
+          margin: 0 20px;
+          font-size: 18px;
+          color: #fff;
+      }
+
+      li > a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+      }
+
+      li > a:hover {
+          color: #fff;
+          transition: ease-in 0.3s;
+          border: dotted 2px #fff;
+          padding: 5px 10px;
+          border-radius: 10px;
+      }
+
+        .back-btn {
+          display: inline-block;
+          margin: 2.5rem 0 1.5rem 2vw;
+          padding: 0.5rem 1.2rem;
+          background: #00B4D8;
+          color: #fefefe;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 1rem;
+          font-weight: 600;
+          border: none;
+          border-radius: 0.5rem;
+          text-decoration: none;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          transition: background 0.2s, color 0.2s;
+          position: relative;
+          top: 4.5rem;
+        }
+        .back-btn:hover {
+          background: #48CAE4;
+          color: #fff;
+          transition: ease-in 0.3s;
+          border: dotted 2px #fff;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
+
+        .certifications-section {
+          padding: 7rem 1rem 2rem 1rem; /* Add top padding for navbar */
+          min-height: 100vh;
+        }
+
+        .badge-counter {
+          margin-bottom: 2rem;
+          text-align: center;
+        }
+
+        .title {
+          font-size: 2.5rem;
+          font-family: 'Baloo 2', cursive;
+          color: #fff;
+          margin-bottom: 0.1rem;
+          margin-top: 0%;
+        }
+
+        .subtitle {
+          font-size: 1.1rem;
+          font-weight: 400;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
+        .certifications-container {
+          display: flex;
+          flex-direction: column;
+          gap: 3rem;
+          max-width: 1400px;
+          margin: 0 auto;
+        }
+
+        .section-title {
+          font-size: 2rem;
+          font-family: 'Baloo 2', cursive;
+          margin-bottom: 1.5rem;
+          color: #fff;
+          text-align: left;
+        }
+
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        @media (min-width: 600px) {
+          .grid-container {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .grid-container {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+        }
+
+        .cert-card {
+          background: rgba(255, 255, 255, 0.13);
+          backdrop-filter: blur(10px);
+          border-radius: 1.5rem;
+          padding: 1.5rem 1.2rem;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          min-height: 260px;
+          transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cert-card:hover {
+          transform: translateY(-5px) scale(1.02);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+        }
+
+        .card-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+        }
+
+        .logo, .logo-small {
+          height: 60px;
+          width: auto;
+          margin-right: 1rem;
+          border-radius: 0.5rem;
+          background: #fff;
+          padding: 0.3rem;
+          box-sizing: border-box;
+          max-width: 30vw;
+        }
+        .fcc {
+          background: #0b1649;
+        }
+
+        .card-title {
+          flex: 1;
+          text-align: right;
+          font-size: 1.1rem;
+          font-weight: 600;
+          color: #fff;
+          margin-left: 1rem;
+          word-break: break-word;
+        }
+
+        .card-description {
+          font-size: 1rem;
+          color: rgba(255, 255, 255, 0.88);
+          margin-bottom: 1.2rem;
+        }
+
+        .view-link {
+          font-size: 1rem;
+          color: #fefefe;
+          text-decoration: underline;
+          font-weight: 600;
+          align-self: flex-end;
+          word-break: break-all;
+        }
+
+        .view-link:hover {
+          color: #48CAE4;
+        }
+
+        
+        @media (max-width: 400px) {
+          .cert-card {
+            padding: 1rem 0.5rem;
+            min-height: 180px;
+          }
+          .logo, .logo-small {
+            height: 40px;
+            max-width: 50vw;
+          }
+          .card-title {
+            font-size: 1rem;
+            margin-left: 0.5rem;
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .card-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+          }
+          .card-title {
+            text-align: left;
+            margin-left: 0;
+            margin-top: 0.5rem;
+            width: 100%;
+          }
+          .logo, .logo-small {
+            margin-right: 0;
+            margin-bottom: 0.2rem;
+            max-width: 80vw;
+          }
+        }
