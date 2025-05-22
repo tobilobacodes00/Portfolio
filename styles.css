@@ -228,8 +228,8 @@ li > a:hover {
 }
 
 .about-image {
-    width: 230px;
-    height: 230px;
+    width: 300px;
+    height: 300px;
     border-radius: 20px;
     object-fit: cover; /* Keeps the image proportions intact */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
