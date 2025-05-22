@@ -36,27 +36,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const filterBtns = document.querySelectorAll('.filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
 
-filterBtns.forEach(btn => {
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-    // Toggle active class
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const filter = btn.getAttribute('data-filter');
-
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.getAttribute('data-category') === filter) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
-    });
-  });
-});
 
 
 const previewModal = document.getElementById("previewModal");
@@ -65,7 +45,7 @@ const closeModal = document.getElementById("closeModal");
 
 document.querySelectorAll(".preview-btn").forEach(btn => {
   btn.addEventListener("click", function () {
-    const imgSrc = this.dataset.preview; // Set image path in data-preview=""
+    const imgSrc = this.dataset.preview; 
     previewImage.src = imgSrc;
     previewModal.style.display = "flex";
   });
