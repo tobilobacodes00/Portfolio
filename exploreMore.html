@@ -3,104 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore More - Coming Soon</title>
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .container {
-            text-align: center;
-            padding: 40px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 500px;
-        }
-
-        h1 {
-            font-size: 2rem;
-            color: #333;
-            margin-bottom: 20px;
-            font-family: 'Quicksand', sans-serif;
-        }
-
-        p {
-            font-size: 1.2rem;
-            color: #555;
-            margin-bottom: 30px;
-            font-family: 'Baloo 2', cursive;
-            
-        }
-
-        /* Loader Animation */
-        .loader {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #3498db;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 2s linear infinite;
-            margin: 0 auto;
-        }
-
-        /* Spinner Animation */
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* Button Styling */
-        .explore-btn {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1rem;
-            color: #fff;
-            background-color: #3498db;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: bold;
-        }
-
-        .explore-btn:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <title>Explore More Projects From Tobiloba</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div class="container">
-        <h1>Explore More Projects</h1>
-        <p>We're building something exciting! Stay tuned for more projects.</p>
-        <div class="loader"></div>
-        <p>Loading new content...</p>
-        <a href="index.html#projects"><button class="explore-btn" onclick="location.href='javascript:void(0)'">Check Back Later</button></a>
-    </div>
-
-    <script>
-        // JS to simulate animation or future functionality.
-        setTimeout(function () {
-            // You could replace this with a more complex set of animations or messages later
-            alert("Thanks for checking in! We'll have exciting updates soon.");
-        }, 5000);  // Message after 5 seconds
-    </script>
-
+    <!--Projects-->
+      <a href="index.html#projects" class="back-btn">&larr; Back to Portfolio</a>
+          <!-- Project Cards -->
+          <section id="projects" class="projects-section">
+            <div class="container">
+              <h2 class="section-title">Others</h2>
+              <p class="section-subtitle">These are the rest of my fabulous works which i can proudly deploy</p>
+          
+              <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card"  data-aos="fade-up" data-aos-delay="100">
+                  <img src="https://i.postimg.cc/G2BkVcTk/project1.jpg" alt="Project 1" class="project-image" />
+                  <div class="project-content">
+                    <h3 class="project-title">A Palindrome Checker</h3>
+                    <h3 class="project-title">Tech Stack: HTML, CSS, JavaScript</h3>
+                    <div class="project-buttons">
+                      <a href="#projects" class="btn-preview preview-btn" data-preview="https://i.postimg.cc/G2BkVcTk/project1.jpg">Preview</a>
+                      <a href="https://tobilobacodes00.github.io/Palindrome-Checker/" target="_blank" class="btn full">View Full Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="project-card"  data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.postimg.cc/Jn9bW9jS/project2.jpg" alt="Project 2" class="project-image" />
+                    <div class="project-content">
+                      <h3 class="project-title">A Roman Numeral Converter</h3>
+                      <h3 class="project-title">Tech Stack: HTML, CSS, JavaScript</h3>
+                      <div class="project-buttons">
+                        <a href="#projects" class="btn-preview preview-btn" data-preview="https://i.postimg.cc/Jn9bW9jS/project2.jpg">Preview</a>
+                        <a href="https://tobilobacodes00.github.io/Roman-Numeral-Converter/" target="_blank" class="btn full">View Full Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.postimg.cc/SQM6Gxh4/project4.jpg" alt="Project 4" class="project-image" />
+                    <div class="project-content">
+                      <h3 class="project-title">A Cash Register</h3>
+                      <h3 class="project-title">Tech Stack: HTML, CSS, JavaScript</h3>
+                      <div class="project-buttons">
+                        <a href="#projects" class="btn-preview preview-btn" data-preview="https://i.postimg.cc/SQM6Gxh4/project4.jpg">Preview</a>
+                        <a href="moreProjects/cashRegister/index.html" target="_blank" class="btn full">View Full Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://i.postimg.cc/fTQxqQz9/project5.jpg" alt="Project 5" class="project-image" />
+                    <div class="project-content">
+                      <h3 class="project-title">A Pokemon Search App</h3>
+                      <h3 class="project-title">Tech Stack: HTML, CSS, JavaScript</h3>
+                      <div class="project-buttons">
+                        <a href="#projects" class="btn-preview preview-btn" data-preview="https://i.postimg.cc/fTQxqQz9/project5.jpg">Preview</a>
+                        <a href="moreProjects/pokemonSearchApp/index.html" target="_blank" class="btn full">View Full Project</a>
+                      </div>
+                    </div>
+                  </div>
+          
+               
+          
+      
 </body>
 </html>
