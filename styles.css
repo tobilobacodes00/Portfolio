@@ -537,13 +537,6 @@ li > a:hover {
 
 /* Update your existing preview modal styles for mobile */
 @media screen and (max-width: 768px) {
-    .preview-modal {
-        display: none;
-    }
-    .btn-preview {
-    display: none;
-  }
-
     .modal-content {
         width: 95%;
         height: auto;
@@ -589,10 +582,6 @@ li > a:hover {
         margin: 10px auto;
     }
 }
-
-    .btn-preview {
-    display: none;
-  }
 
 
 
@@ -980,6 +969,9 @@ li > a:hover {
 
 /* Mobile Screens (576px to 767px) */
 @media screen and (max-width: 767px) {
+    .btn-preview {
+    display: none;
+  }
     /* Header */
     header {
         height: 60px; /* Reduced height */
