@@ -486,13 +486,16 @@ li > a:hover {
     animation: popUp 0.3s ease;
     max-width: 80%;  /* Adjusted from 90% */
     max-height: 90vh; /* Added viewport height */
+    min-width: 400px;     /* Add a minimum width */
+    min-height: 300px;    /* Add a minimum height */
+    
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .modal-content img {
-    width: auto;     /* Changed from 100% */
+    width: 100%;     /* Changed from 100% */
     height: auto;    /* Added height auto */
     max-height: 80vh; /* Maximum height relative to viewport */
     max-width: 100%; /* Ensure image doesn't overflow container */
@@ -574,14 +577,7 @@ li > a:hover {
     }
 }
 
-/* Additional adjustment for very small screens */
-@media screen and (max-width: 480px)
-{
-    .modal-content {
-        width: 98%;
-        margin: 10px auto;
-    }
-}
+
 
 
 
@@ -1106,3 +1102,31 @@ li > a:hover {
         padding: 80px 20px;
     }
 }
+
+/* this is for the other projects section */
+
+.back-btn {
+          display: inline-block;
+          margin: 2.5rem 0 1.5rem 2vw;
+          padding: 0.5rem 1.2rem;
+          background: #00B4D8;
+          color: #fefefe;
+          font-family: 'Quicksand', sans-serif;
+          font-size: 1rem;
+          font-weight: 600;
+          border: none;
+          border-radius: 0.5rem;
+          text-decoration: none;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          transition: background 0.2s, color 0.2s;
+          position: relative;
+          top: 4.5rem;
+        }
+        .back-btn:hover {
+          background: #48CAE4;
+          color: #fff;
+          transition: ease-in 0.3s;
+          border: dotted 2px #fff;
+          padding: 5px 10px;
+          border-radius: 10px;
+        }
